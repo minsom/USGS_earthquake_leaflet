@@ -122,7 +122,7 @@ function createMap(earthquakes) {
     var colorSchemes = ['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026'];
     var labels = [];
 
-    var legendTitle = `<h3>Magnitude</h3>`;
+    var legendTitle = `<h5>Magnitude</h5>`;
     div.innerHTML = legendTitle;  
 
     for (var i = 0; i < colorSchemes.length; i++) {

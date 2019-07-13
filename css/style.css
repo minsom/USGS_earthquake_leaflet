@@ -1,14 +1,31 @@
+*{
+  font-family: Ubuntu;
+  font-size: 15px;
+}
+
+.header {
+  max-width: 100%;
+  padding-bottom: 5px;
+
+}
+
+h1 {
+  text-align: center;
+  font-family: Cabin Sketch;
+}
+
 /* remove default margin and padding from body */
 body {
   padding: 0;
-  margin: 0;
+  padding-bottom: 80px;
+  margin: 0,0,50,0;
+  background-color: black;
+  color: #555;
 }
 
 /* set map, body, and html to 100% of the screen size */
-#map,
-body,
-html {
-  height: 100%;
+#map, body, html {
+  height: 85%;
 }
 
 /* CSS from the Leaflet-Choropleth documentation */
@@ -35,16 +52,19 @@ html {
   height: 22px;
 }
 
-
-.legend .min {
-  float: left;
-  padding-bottom: 5px;
-}
-
-.legend .max {
-  float: right;
-}
-
-h1 {
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   text-align: center;
+  background-color:black;
+}
+
+#footer p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
 }
